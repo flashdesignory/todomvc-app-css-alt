@@ -14,9 +14,11 @@ export default {
     input: "src/js/index.js",
     output: [
         {
-            file: "dist/index.js",
+            dir: "dist",
             format: "es",
             sourcemap: true,
+            preserveModules: true,
+            preserveModulesRoot: 'src',
         },
     ],
     plugins: [
