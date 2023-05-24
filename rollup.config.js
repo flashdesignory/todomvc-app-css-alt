@@ -5,6 +5,7 @@ import babel from "@rollup/plugin-babel";
 import css from "rollup-plugin-import-css";
 import copy from "rollup-plugin-copy";
 import cleaner from 'rollup-plugin-cleaner';
+import html from '@rollup/plugin-html';
 
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
@@ -46,6 +47,7 @@ export default {
                 { src: "src/css", dest: "dist" }
             ],
         }),
+        html(),
         production && terser(),
     ],
 };

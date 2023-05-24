@@ -12,11 +12,13 @@
     "dev": "http-server ./ -p 7005 -c-1 --cors -o",
     "lint": "stylelint \"src/css/*.css\"",
     "build": "rollup -c --bundleConfigAsCjs",
-    "reference": "http-server ./_reference/ -p 7006 -c-1 --cors -o"
+    "reference": "http-server ./_reference/ -p 7006 -c-1 --cors -o",
+    "serve": "http-server ./dist/ -p 7007 -c-1 --cors -o"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-html": "^1.0.2",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.3",
     "http-server": "^14.1.1",
