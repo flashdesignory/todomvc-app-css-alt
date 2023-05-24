@@ -45,17 +45,16 @@ export default {
             targets: [
                 {
                     src: ["src/css/index.css"],
-                    dest: "dist"
+                    dest: "dist/css"
                 },
                 {
-                    src: ["src/css/*", "!src/css/index.css", "!src/css/partials.css"],
-                    dest: "dist/css",
-                    rename: (name, extension) => {
-                        if (name === "global")
-                            return `${name}.${extension}`;
-
-                        return `${name}.module.${extension}`;
-                    }
+                    src: ["src/css/*", "!src/css/index.css", "!src/css/partials.css", "!src/css/global.css"],
+                    dest: "dist/css/modules",
+                   rename: (name, extension) => `${name}.module.${extension}`
+                },
+                {
+                    src: ["src/css/*", "!src/css/index.css"],
+                    dest: "dist/css/partials",
                 }
             ]
         }),
