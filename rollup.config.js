@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 import css from "rollup-plugin-import-css";
 import copy from "rollup-plugin-copy";
+import cleaner from 'rollup-plugin-cleaner';
 
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
@@ -14,11 +15,16 @@ export default {
     output: [
         {
             file: "dist/index.js",
-            format: "iife",
+            format: "es",
             sourcemap: true,
         },
     ],
     plugins: [
+        cleaner({
+            targets: [
+              './dist/'
+            ]
+        }),
         css({
             minify: true,
             output: "dist/index.min.css"
@@ -33,7 +39,10 @@ export default {
         }),
         commonjs(),
         copy({
-            targets: [{ src: "src/css/index.css", dest: "dist/" }],
+            targets: [
+                { src: "src/css/index.css", dest: "dist" },
+                { src: "src/css", dest: "dist/css" }
+            ],
         }),
         production && terser(),
     ],
