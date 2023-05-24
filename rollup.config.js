@@ -41,7 +41,7 @@ export default {
         copy({
             targets: [
                 { src: "src/css/index.css", dest: "dist" },
-                { src: "src/css", dest: "dist/css" }
+                { src: "src/css", dest: "dist" }
             ],
         }),
         production && terser(),
