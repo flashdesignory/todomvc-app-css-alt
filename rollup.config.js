@@ -50,9 +50,14 @@ export default {
                 {
                     src: ["src/css/*", "!src/css/index.css", "!src/css/partials.css"],
                     dest: "dist/css",
-                    rename: (name, extension) => `${name}.module.${extension}`
+                    rename: (name, extension) => {
+                        if (name === "global")
+                            return `${name}.${extension}`;
+
+                        return `${name}.module.${extension}`;
+                    }
                 }
-            ],
+            ]
         }),
         html(),
         production && terser(),
