@@ -43,8 +43,15 @@ export default {
         commonjs(),
         copy({
             targets: [
-                { src: ["src/css/index.css"], dest: "dist" },
-                { src: ["src/css/*", "!src/css/index.css"], dest: "dist/css" }
+                {
+                    src: ["src/css/index.css"],
+                    dest: "dist"
+                },
+                {
+                    src: ["src/css/*", "!src/css/index.css", "!src/css/partials.css"],
+                    dest: "dist/css",
+                    rename: (name, extension) => `${name}.module.${extension}`
+                }
             ],
         }),
         html(),
