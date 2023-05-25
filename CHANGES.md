@@ -3,21 +3,33 @@
 ## Screenshots
 
 Lighthouse audit, before changes(reference files):
+
+____
+
 ![](scores_before.png)
 
 ____
 
 Lighthouse audit, after changes (updated files):
+
+____
+
 ![](scores_after.png)
 
 ____
 
 Wave audit, before changes(reference files):
+
+____
+
 ![](wave_before.png)
 
 ____
 
 Wave audit, after changes (updated files):
+
+____
+
 ![](wave_after.png)
 
 ## Issues
