@@ -49,7 +49,20 @@ This has been changed and a header element is now placed as the first element of
 The info footer class name has been changed to adhere to a consistent naming convention
 
 ### ***Toggle all checkbox***
+
 Similar to the title, this checkbox was placed in the main list container and pushed up visually to be placed in the previous header. This is now present in the app's "topbar", which contains the toggle all checkbox along with the new todo input field. 
+
+### ***Remove todo button***
+The class name changed to more clearly communicate what the button is doing.
+
+### ***Element ids***
+
+All elements that a user can interact with have now an id, to be able to target the element more directly. 
+Input elements already needed an id present, and this addition results in consistency and also sets up the file structure to be more extensible. 
+
+### ***Focusable elements***
+
+All focusable elements are now clearly displayed with a red border and keyboard tab actions correctly "move" through the application structure.
 
 ## Detailed screenshots
 
