@@ -41,7 +41,7 @@ export default function Footer() {
 			<p className={styles["footer-text"]}>
                 Part of <a className={styles["footer-link"]} href="http://todomvc.com">TodoMVC</a>
             </p>
-		</footer>
+	</footer>
     )
 }
 ```
