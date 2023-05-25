@@ -22,11 +22,8 @@
 				    <label for="toggle-all" class="toggle-all-label">Mark all todos as complete.</label>
                 </div>
 			</header>
-			<!-- This section should be hidden by default and shown when there are todos -->
 			<section class="main">
 				<ul class="todo-list">
-					<!-- These are here just to show the structure of the list items -->
-					<!-- List items should get the class `editing` when editing and `completed` when marked as completed -->
 					<li id="todo-item-0" class="todo-item completed">
 						<div class="display-todo">
                             <label for="toggle-todo-0" class="visually-hidden">Toggle Todo</label>
@@ -65,11 +62,8 @@
 					</li>
 				</ul>
 			</section>
-			<!-- This footer should be hidden by default and shown when there are todos -->
 			<footer class="bottombar">
-				<!-- This should be `0 items left` by default -->
 				<div class="todo-status"><span class="todo-count">0</span> item left</div>
-				<!-- Remove this if you don't implement routing -->
 				<ul class="filter-list">
 					<li class="filter-item">
 						<a id="filter-link-all" class="filter-link selected" href="#/">All</a>
@@ -81,7 +75,6 @@
 						<a id="filter-link-completed" class="filter-link" href="#/completed">Completed</a>
 					</li>
 				</ul>
-				<!-- Hidden if no completed items are left ↓ -->
 				<button id="clear-completed" class="clear-completed-button">Clear completed</button>
 			</footer>
 		</section>
