@@ -15,11 +15,8 @@ export default {
     input: "src/js/index.js",
     output: [
         {
-            dir: "dist",
+            file: "dist/index.js",
             format: "es",
-            sourcemap: true,
-            preserveModules: true,
-            preserveModulesRoot: 'src',
         },
     ],
     plugins: [
@@ -45,16 +42,16 @@ export default {
             targets: [
                 {
                     src: ["src/css/index.css"],
-                    dest: "dist/css"
+                    dest: "dist/"
                 },
                 {
                     src: ["src/css/*", "!src/css/index.css", "!src/css/partials.css", "!src/css/global.css"],
-                    dest: "dist/css/modules",
+                    dest: "dist/",
                    rename: (name, extension) => `${name}.module.${extension}`
                 },
                 {
                     src: ["src/css/*", "!src/css/index.css"],
-                    dest: "dist/css/partials",
+                    dest: "dist/",
                 }
             ]
         }),
