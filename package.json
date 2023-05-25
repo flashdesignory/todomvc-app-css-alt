@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "An alt version to the official todo-app-css.",
   "author": "Thorsten Kober",
+  "repository": "flashdesignory/todomvc-app-css-alt",
+  "license": "ISC",
   "main": "src/js/index.js",
   "engines": {
     "node": ">=18.13.0",
