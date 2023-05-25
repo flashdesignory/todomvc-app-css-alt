@@ -8,6 +8,12 @@ Lighthouse audit, before changes(reference files):
 Lighthouse audit, after changes (updated files):
 ![](scores_after.png)
 
+Wave audit, before changes(reference files):
+![](wave_before.png)
+
+Wave audit, after changes (updated files):
+![](wave_after.png)
+
 ## Issues
 
 ### **Form elements do not have associated labels.**
