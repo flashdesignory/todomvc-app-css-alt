@@ -64,6 +64,11 @@ Input elements already needed an id present, and this addition results in consis
 
 All focusable elements are now clearly displayed with a red border and keyboard tab actions correctly "move" through the application structure.
 
+### ***Todo Items***
+
+All todo items should receive a unique id, to be able to associate each label with its corresponding input correctly.
+The index.html file in the root of the repo showcases how it should be implemented. 
+
 ## Detailed screenshots
 
 ### ***Topbar***
