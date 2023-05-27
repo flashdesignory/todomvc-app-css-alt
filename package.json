@@ -28,6 +28,7 @@
     "rollup": "^3.23.0",
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-copy-merge": "^1.0.2",
     "rollup-plugin-import-css": "^3.2.1",
     "stylelint": "^15.6.2",
     "stylelint-config-standard": "^33.0.0"
