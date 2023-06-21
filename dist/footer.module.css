@@ -1,3 +1,8 @@
+:host {
+    display: block;
+	box-shadow: none !important;
+}
+
 .footer {
 	margin: 65px auto 0;
 	color: #4d4d4d;

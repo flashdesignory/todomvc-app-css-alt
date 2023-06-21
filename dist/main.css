@@ -1,4 +1,8 @@
+:host {
+    display: block;
+	box-shadow: none !important;
+}
+
 .main {
 	position: relative;
-	border-top: 1px solid #e6e6e6;
 }
