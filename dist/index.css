@@ -110,6 +110,19 @@
 	text-decoration: underline;
 }
 
+/* rtl support */
+html[dir="rtl"] .todo-status,
+:host([dir="rtl"]) .todo-status { 
+	right: 12px;
+	left: unset;
+}
+
+html[dir="rtl"] .clear-completed-button,
+:host([dir="rtl"]) .clear-completed-button { 
+	left: 12px;
+	right: unset;
+}
+
 @media (max-width: 430px) {
 	.bottombar {
 		height: 120px;
@@ -143,6 +156,19 @@
 		right: unset;
 		top: unset;
 		transform: unset;
+	}
+
+	/* rtl support */
+	html[dir="rtl"] .todo-status,
+	:host([dir="rtl"]) .todo-status { 
+		right: unset;
+		left: unset;
+	}
+
+	html[dir="rtl"] .clear-completed-button,
+	:host([dir="rtl"]) .clear-completed-button { 
+		left: unset;
+		right: unset;
 	}
 }
 :host {
@@ -229,6 +255,10 @@ input {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+input:placeholder-shown {
+	text-overflow: ellipsis;
+}
+
 /* utility classes */
 
 /* used for things that should be hidden in the ui,
@@ -257,6 +287,7 @@ but useful for people who use screen readers */
     display: block;
 	box-shadow: none !important;
 }
+
 .header {
 	margin-top: 27px;
 }
@@ -418,6 +449,26 @@ but useful for people who use screen readers */
 		display: block;
 	}
 }
+
+/* stylelint-disable */
+/* rtl support */
+html[dir="rtl"] .toggle-todo-input,
+:host([dir="rtl"]) .toggle-todo-input { 
+	right: 3px;
+	left: unset;
+}
+
+html[dir="rtl"] .todo-item-text,
+:host([dir="rtl"]) .todo-item-text { 
+	background-position: center right 6px;
+}
+
+html[dir="rtl"] .remove-todo-button,
+:host([dir="rtl"]) .remove-todo-button { 
+	left: 10px;
+	right: unset;
+}
+/* stylelint-enable */
 :host {
     display: block;
 	box-shadow: none !important;
@@ -509,4 +560,16 @@ but useful for people who use screen readers */
 	.toggle-all-input {
 		background: none;
 	}
+}
+
+/* rtl support */
+html[dir="rtl"] .new-todo-input,
+:host([dir="rtl"]) .new-todo-input { 
+	padding: 0 60px 0 32px;
+}
+
+html[dir="rtl"] .toggle-all-display,
+:host([dir="rtl"]) .toggle-all-display { 
+	right: 0;
+	left: unset;
 }

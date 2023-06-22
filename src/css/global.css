@@ -57,7 +57,7 @@ input {
 }
 
 input:placeholder-shown {
-  text-overflow: ellipsis;
+	text-overflow: ellipsis;
 }
 
 /* utility classes */
